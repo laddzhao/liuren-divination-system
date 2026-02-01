@@ -1,60 +1,56 @@
-# Liuren Divination System (小六壬占卜系统)
+# Liuren Divination System | 小六壬掌诀占卜
 
-<div align="center">
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![GitHub stars](https://img.shields.io/github/stars/laddzhao/liuren-divination-system?style=social)
 
-![Liuren Banner](https://img.shields.io/badge/Liuren-小六壬-orange)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue)
-![Language](https://img.shields.io/badge/Language-English%20%2B%20Chinese-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+A modern, interactive web application for practicing traditional Chinese Liuren (小六壬) divination with educational and cultural preservation features.
 
-🌐 **[Live Demo](https://laddzhao.github.io/liuren-divination-system/)**
-📚 **[Documentation](#documentation)**
-📖 **[中文说明](#中文说明)**
+![Liuren Divination Screenshot](https://raw.githubusercontent.com/laddzhao/liuren-divination-system/main/screenshot.png)
 
-</div>
+## 🌟 Features
 
-## 🏮 Overview
-
-**Liuren Divination System** is a modern, web-based implementation of the traditional Chinese Six Palm Divination method (小六壬). This project aims to preserve and make accessible an important part of China's intangible cultural heritage through an intuitive, bilingual interface.
-
-The system allows users to:
-- Perform traditional Liuren divination calculations
-- Learn about the six palm positions and their meanings
-- Understand the cultural context and historical significance
-- Access educational content about Chinese metaphysics
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Open%20Source-✓-success" alt="Open Source">
-  <img src="https://img.shields.io/badge/Responsive-✓-blue" alt="Responsive">
-  <img src="https://img.shields.io/badge/Accessible-✓-important" alt="Accessible">
-  <img src="https://img.shields.io/badge/Cultural%20Heritage-✓-ff69b4" alt="Cultural Heritage">
-</div>
-
-## ✨ Features
-
-### 🎯 Core Functionality
-- **Three Divination Methods**:
-  - Time-based calculation (month/day/hour)
-  - Real-time current time divination
+### 🎯 Interactive Divination
+- **Three Calculation Methods**:
+  - Manual time selection (lunar month/day/hour)
+  - Current time automatic calculation
   - Random number generation
-- **Six Palm Positions** with detailed interpretations
-- **Bilingual Interface** (English + Chinese)
+- **Real-time Results**: Detailed interpretations based on six palm positions
+- **Palm Chart Visualization**: Interactive representation of the six positions
 
-### 📚 Educational Content
-- Complete course on Liuren basics
-- Detailed explanations of each palm position
-- Traditional poems and interpretations
-- Cultural context and historical background
-- Adaptation methods and flexible interpretation
+### 📚 Educational Resources
+- **Complete Learning Center**:
+  - Comprehensive guides to all six palm positions
+  - Traditional poems and modern interpretations
+  - Five Elements theory explanations
+  - Adaptation methods for flexible interpretation
+- **Cultural Context**: Historical background and philosophical foundations
+- **Traditional Energy Concepts**: Explanations of spiritual concepts in cultural context
 
-### 🎨 User Experience
-- Clean, traditional Chinese-inspired design
-- Responsive layout for all devices
-- Interactive palm chart visualization
-- Real-time calculations
-- Intuitive navigation and learning flow
+### 🎨 Design & Usability
+- **Traditional Chinese Aesthetic**: Color schemes based on Chinese elements
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Bilingual Interface**: English primary with Chinese reference
+- **Intuitive UI**: Clean, modern interface with clear navigation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/laddzhao/liuren-divination-system.git
-   cd liuren-divination-system
+### 🛠️ Technical Features
+- **Pure Frontend**: No backend required, runs entirely in browser
+- **Modular JavaScript**: Object-oriented design with clear separation of concerns
+- **Custom CSS**: Responsive design with CSS Grid and Flexbox
+- **No External Dependencies**: Only Font Awesome for icons
+
+## 📖 What is Liuren Divination?
+
+Liuren (小六壬), meaning "Small Six Ren", is a traditional Chinese divination method that uses six fixed positions on the palm to analyze situations based on time and intuition. It originates from Chinese folk and Daoist traditions and has been used for centuries for daily decision-making guidance.
+
+### Key Principles:
+- Uses lunar calendar: month, day, and Chinese hour (12 two-hour periods)
+- Six palm positions each with unique meanings and element associations
+- Emphasizes flexible interpretation and context awareness
+- Based on Five Elements theory (Wood, Fire, Earth, Metal, Water)
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Internet connection (for Font Awesome icons)

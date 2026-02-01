@@ -6,7 +6,6 @@
 
 A modern, interactive web application for practicing traditional Chinese Liuren (小六壬) divination with educational and cultural preservation features.
 
-![Liuren Divination Screenshot](https://raw.githubusercontent.com/laddzhao/liuren-divination-system/main/screenshot.png)
 
 ## 🌟 Features
 

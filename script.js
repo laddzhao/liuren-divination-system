@@ -53,6 +53,7 @@ const LIUREN_KNOWLEDGE = {
         `
     },
     
+    // Six Palm Positions
     positions: {
         daan: {
             id: "daan",
@@ -73,6 +74,12 @@ const LIUREN_KNOWLEDGE = {
                 direction: "East",
                 color: "Green/Blue",
                 deity: "Azure Dragon"
+            },
+            weather: "Changeable weather with mild breezes",
+            spirituality: {
+                traditional: "解灾之神 (Disaster-resolving deity)",
+                modern: "Associated with protective energies and stability",
+                explanation: "In traditional belief, Da An represents protective forces that help resolve difficulties and maintain harmony."
             },
             adaptation: "Da An is stable but stagnant. For growth, add Wood element (green colors, east direction)."
         },
@@ -97,6 +104,12 @@ const LIUREN_KNOWLEDGE = {
                 color: "Black/Blue",
                 deity: "Black Tortoise"
             },
+            weather: "Continuous drizzling rain, good for crops",
+            spirituality: {
+                traditional: "过路游魂 (Wandering spirits)",
+                modern: "Associated with lingering energies and unresolved matters",
+                explanation: "Traditionally linked to wandering energies that can cause delays and confusion until properly addressed."
+            },
             adaptation: "Liu Lian (Water) to West (Metal): Metal generates Water, so obstacles may lead to success."
         },
         
@@ -119,6 +132,12 @@ const LIUREN_KNOWLEDGE = {
                 direction: "South",
                 color: "Red",
                 deity: "Vermilion Bird"
+            },
+            weather: "Rainbows appear, bright sunshine",
+            spirituality: {
+                traditional: "火神，大兴火建将军 (Fire deity, Great Fire General)",
+                modern: "Associated with transformative and purifying energies",
+                explanation: "Connected with fire energy that brings transformation, purification, and rapid change."
             },
             adaptation: "Su Xi (Fire) near water: Water overcomes Fire, so expect some obstacles."
         },
@@ -143,6 +162,12 @@ const LIUREN_KNOWLEDGE = {
                 color: "White",
                 deity: "White Tiger"
             },
+            weather: "Cold like a knife, with thunderstorms, frost, snow or hail",
+            spirituality: {
+                traditional: "金神欺煞，白虎 (Metal deity, White Tiger)",
+                modern: "Associated with sharp energies and potential conflicts",
+                explanation: "Connected with the White Tiger, a symbol of metal energy that can be protective but also cause conflicts if unbalanced."
+            },
             adaptation: "Chi Kou hours (3-7 PM) reduce conflict effects. Avoid important meetings at noon."
         },
         
@@ -166,6 +191,12 @@ const LIUREN_KNOWLEDGE = {
                 color: "Green",
                 deity: "Six Harmonies"
             },
+            weather: "Few stars and moon, mixed yin-yang weather",
+            spirituality: {
+                traditional: "六合 (Six Harmonies)",
+                modern: "Associated with harmonious connections and helpful influences",
+                explanation: "Represents the Six Harmonies, symbolizing balance and positive connections between different elements."
+            },
             adaptation: "Xiao Ji benefits from cooperation. Seek help from southwest people."
         },
         
@@ -188,6 +219,12 @@ const LIUREN_KNOWLEDGE = {
                 direction: "Center",
                 color: "Yellow",
                 deity: "Gou Chen"
+            },
+            weather: "Thick fog, sun and moon obscured",
+            spirituality: {
+                traditional: "勾陈，暗鬼 (Gou Chen, hidden ghosts)",
+                modern: "Associated with emptiness and unresolved spiritual matters",
+                explanation: "Represents emptiness and unresolved spiritual issues that may need addressing through traditional balancing methods."
             },
             adaptation: "Kong Wang for bad events: emptiness can mean safety. For good events: may fail."
         }
@@ -253,6 +290,88 @@ const LIUREN_KNOWLEDGE = {
                 <p>"What is destined will come, what is not destined cannot be forced."</p>
                 <p>"Tools have no inherent morality - a sword can defend justice or commit robbery, depending on the user's heart."</p>
                 <p class="source">— Traditional Chinese Wisdom</p>
+            </div>
+        `
+    },
+    
+    spirituality: {
+        id: "spirituality",
+        title: "Traditional Energy Concepts",
+        chineseTitle: "傳統能量觀念",
+        content: `
+            <h3><i class="fas fa-mountain"></i> Understanding "Spiritual" Concepts in Liuren</h3>
+            <p>Traditional Chinese metaphysical systems often include concepts that Western cultures might label as "spiritual" or "supernatural." In Liuren, these concepts are better understood as traditional ways of describing energy patterns and environmental influences.</p>
+            
+            <div class="spirituality-warning">
+                <h4><i class="fas fa-exclamation-triangle"></i> Cultural Context Note</h4>
+                <p>These concepts are presented for cultural understanding of traditional Chinese thought. They reflect historical beliefs, not necessarily modern scientific views.</p>
+            </div>
+            
+            <h3><i class="fas fa-yin-yang"></i> Key Traditional Concepts</h3>
+            
+            <div class="spirituality-concepts">
+                <div class="spirituality-concept">
+                    <h4>鬼神 (Guǐ Shén)</h4>
+                    <p><strong>Literal</strong>: "Ghosts and Gods"</p>
+                    <p><strong>Cultural Understanding</strong>: In traditional Chinese thought, this term often refers to various types of spiritual energies or influences, including ancestral spirits, natural energies, and what might be called "environmental factors" today.</p>
+                    <p><strong>Modern Perspective</strong>: Can be understood as symbolic representations of psychological states, environmental influences, or unconscious factors affecting a situation.</p>
+                </div>
+                
+                <div class="spirituality-concept">
+                    <h4>冲犯 (Chōng Fàn)</h4>
+                    <p><strong>Literal</strong>: "To offend or violate"</p>
+                    <p><strong>Cultural Understanding</strong>: Refers to energy clashes or disharmonies between different elements, directions, or timing factors.</p>
+                    <p><strong>Modern Perspective</strong>: Similar to concepts of environmental stress, psychological tension, or conflicting priorities in a situation.</p>
+                </div>
+                
+                <div class="spirituality-concept">
+                    <h4>穰解 (Ráng Jiě)</h4>
+                    <p><strong>Literal</strong>: "To dispel or resolve"</p>
+                    <p><strong>Cultural Understanding</strong>: Traditional methods for restoring balance and harmony, which might include rituals, adjustments to environment, or behavioral changes.</p>
+                    <p><strong>Modern Perspective</strong>: Comparable to stress management techniques, environmental adjustments, or therapeutic interventions to restore wellbeing.</p>
+                </div>
+            </div>
+            
+            <h3><i class="fas fa-hand-sparkles"></i> Spiritual Associations by Palm Position</h3>
+            
+            <div class="spirituality-content">
+                <h4><i class="fas fa-peace"></i> Da An (大安)</h4>
+                <p><strong>Traditional</strong>: 解灾之神 (Disaster-resolving deity)</p>
+                <p><strong>Modern Interpretation</strong>: Represents protective, stabilizing energies that help resolve difficulties.</p>
+                
+                <h4><i class="fas fa-cloud"></i> Liu Lian (留連)</h4>
+                <p><strong>Traditional</strong>: 过路游魂 (Wandering spirits)</p>
+                <p><strong>Modern Interpretation</strong>: Associated with lingering issues, unresolved matters, or distracting influences.</p>
+                
+                <h4><i class="fas fa-fire"></i> Su Xi (速喜)</h4>
+                <p><strong>Traditional</strong>: 火神 (Fire deity)</p>
+                <p><strong>Modern Interpretation</strong>: Connected with transformative, energizing forces that bring rapid change.</p>
+                
+                <h4><i class="fas fa-gem"></i> Chi Kou (赤口)</h4>
+                <p><strong>Traditional</strong>: 白虎 (White Tiger)</p>
+                <p><strong>Modern Interpretation</strong>: Associated with sharp, potentially conflicting energies that need careful handling.</p>
+                
+                <h4><i class="fas fa-handshake"></i> Xiao Ji (小吉)</h4>
+                <p><strong>Traditional</strong>: 六合 (Six Harmonies)</p>
+                <p><strong>Modern Interpretation</strong>: Represents harmonious connections and helpful influences from others.</p>
+                
+                <h4><i class="fas fa-cloud-moon"></i> Kong Wang (空亡)</h4>
+                <p><strong>Traditional</strong>: 勾陈，暗鬼 (Gou Chen, hidden ghosts)</p>
+                <p><strong>Modern Interpretation</strong>: Associated with emptiness, unresolved issues, or situations where something feels missing or incomplete.</p>
+            </div>
+            
+            <h3><i class="fas fa-balance-scale"></i> Bridging Traditional and Modern Views</h3>
+            <p>When encountering traditional spiritual concepts in Liuren:</p>
+            <ul>
+                <li><strong>See them as metaphorical</strong>: They represent patterns and relationships in a symbolic language</li>
+                <li><strong>Understand their cultural context</strong>: These concepts made sense within traditional Chinese cosmology</li>
+                <li><strong>Extract practical wisdom</strong>: Look for the practical advice about harmony, timing, and relationship management</li>
+                <li><strong>Respect cultural heritage</strong>: These concepts are part of China's rich intangible cultural heritage</li>
+            </ul>
+            
+            <div class="cultural-note">
+                <h4><i class="fas fa-info-circle"></i> Cultural Preservation Note</h4>
+                <p>Presenting these traditional concepts in their original form, while providing modern interpretations, helps preserve cultural heritage while making it accessible to contemporary audiences worldwide.</p>
             </div>
         `
     }
@@ -382,6 +501,15 @@ class LiurenSystem {
         );
         accordion.appendChild(adaptationItem);
         
+        // Add spirituality course
+        const spiritualityItem = this.createAccordionItem(
+            LIUREN_KNOWLEDGE.spirituality.id,
+            LIUREN_KNOWLEDGE.spirituality.title,
+            LIUREN_KNOWLEDGE.spirituality.chineseTitle,
+            LIUREN_KNOWLEDGE.spirituality.content
+        );
+        accordion.appendChild(spiritualityItem);
+        
         // Open first item
         setTimeout(() => {
             accordion.querySelector('.accordion-header').click();
@@ -430,6 +558,8 @@ class LiurenSystem {
     // Generate position content
     generatePositionContent(position) {
         const meanings = position.meanings;
+        const spirituality = position.spirituality;
+        
         return `
             <div class="position-content">
                 <div class="position-header">
@@ -483,6 +613,9 @@ class LiurenSystem {
                     <h4><i class="fas fa-info-circle"></i> Details</h4>
                     <div class="detail-list">
                         <div class="detail-item">
+                            <strong>Weather Association</strong>: ${position.weather}
+                        </div>
+                        <div class="detail-item">
                             <strong>Timing</strong>: ${meanings.timing}
                         </div>
                         <div class="detail-item">
@@ -492,8 +625,17 @@ class LiurenSystem {
                             <strong>Color</strong>: ${meanings.color}
                         </div>
                         <div class="detail-item">
-                            <strong>Deity</strong>: ${meanings.deity}
+                            <strong>Deity/Energy</strong>: ${meanings.deity}
                         </div>
+                    </div>
+                </div>
+                
+                <div class="spirituality-section">
+                    <h4><i class="fas fa-mountain"></i> Traditional Energy Concepts</h4>
+                    <div class="spirituality-content">
+                        <p><strong>Traditional View</strong>: ${spirituality.traditional}</p>
+                        <p><strong>Modern Interpretation</strong>: ${spirituality.modern}</p>
+                        <p><strong>Explanation</strong>: ${spirituality.explanation}</p>
                     </div>
                 </div>
                 
@@ -696,6 +838,7 @@ class LiurenSystem {
         
         const position = result.position;
         const meanings = position.meanings;
+        const spirituality = position.spirituality;
         
         // Get solar time for display
         const now = new Date();
@@ -761,6 +904,9 @@ class LiurenSystem {
                     <h3><i class="fas fa-info-circle"></i> Additional Details</h3>
                     <div class="details-list">
                         <div class="detail">
+                            <strong>Weather Association</strong>: ${position.weather}
+                        </div>
+                        <div class="detail">
                             <strong>Timing</strong>: ${meanings.timing}
                         </div>
                         <div class="detail">
@@ -770,7 +916,19 @@ class LiurenSystem {
                             <strong>Associated Color</strong>: ${meanings.color}
                         </div>
                         <div class="detail">
-                            <strong>Guardian Deity</strong>: ${meanings.deity}
+                            <strong>Deity/Energy Association</strong>: ${meanings.deity}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="traditional-concepts">
+                    <h3><i class="fas fa-mountain"></i> Traditional Energy Concepts</h3>
+                    <div class="spirituality-content">
+                        <p><strong>Traditional View</strong>: ${spirituality.traditional}</p>
+                        <p><strong>Modern Interpretation</strong>: ${spirituality.modern}</p>
+                        <p><strong>Cultural Explanation</strong>: ${spirituality.explanation}</p>
+                        <div class="cultural-note-small">
+                            <i class="fas fa-info-circle"></i> These traditional concepts reflect historical Chinese beliefs about energy and environment.
                         </div>
                     </div>
                 </div>
@@ -790,9 +948,14 @@ class LiurenSystem {
                 <div class="adaptation-section">
                     <h3><i class="fas fa-lightbulb"></i> Adaptation Advice</h3>
                     <p>${position.adaptation}</p>
-                    <button class="learn-more-btn" onclick="liurenSystem.openCourse('${result.id}')">
-                        <i class="fas fa-graduation-cap"></i> Learn More About ${position.name}
-                    </button>
+                    <div class="button-group">
+                        <button class="learn-more-btn" onclick="liurenSystem.openCourse('${result.id}')">
+                            <i class="fas fa-graduation-cap"></i> Learn More About ${position.name}
+                        </button>
+                        <button class="spirituality-btn" onclick="liurenSystem.openCourse('spirituality')">
+                            <i class="fas fa-mountain"></i> Traditional Energy Concepts
+                        </button>
+                    </div>
                 </div>
             </div>
         `;
@@ -821,6 +984,7 @@ class LiurenSystem {
         detailedResult.style.display = 'block';
         
         const meanings = position.meanings;
+        const spirituality = position.spirituality;
         
         detailedResult.innerHTML = `
             <div class="result-content">
@@ -879,6 +1043,9 @@ class LiurenSystem {
                     <h3><i class="fas fa-info-circle"></i> Additional Details</h3>
                     <div class="details-list">
                         <div class="detail">
+                            <strong>Weather Association</strong>: ${position.weather}
+                        </div>
+                        <div class="detail">
                             <strong>Timing</strong>: ${meanings.timing}
                         </div>
                         <div class="detail">
@@ -888,17 +1055,31 @@ class LiurenSystem {
                             <strong>Associated Color</strong>: ${meanings.color}
                         </div>
                         <div class="detail">
-                            <strong>Guardian Deity</strong>: ${meanings.deity}
+                            <strong>Deity/Energy Association</strong>: ${meanings.deity}
                         </div>
+                    </div>
+                </div>
+                
+                <div class="traditional-concepts">
+                    <h3><i class="fas fa-mountain"></i> Traditional Energy Concepts</h3>
+                    <div class="spirituality-content">
+                        <p><strong>Traditional View</strong>: ${spirituality.traditional}</p>
+                        <p><strong>Modern Interpretation</strong>: ${spirituality.modern}</p>
+                        <p><strong>Cultural Explanation</strong>: ${spirituality.explanation}</p>
                     </div>
                 </div>
                 
                 <div class="adaptation-section">
                     <h3><i class="fas fa-lightbulb"></i> Adaptation Advice</h3>
                     <p>${position.adaptation}</p>
-                    <button class="learn-more-btn" onclick="liurenSystem.openCourse('${position.id}')">
-                        <i class="fas fa-graduation-cap"></i> Learn More About ${position.name}
-                    </button>
+                    <div class="button-group">
+                        <button class="learn-more-btn" onclick="liurenSystem.openCourse('${position.id}')">
+                            <i class="fas fa-graduation-cap"></i> Learn More About ${position.name}
+                        </button>
+                        <button class="spirituality-btn" onclick="liurenSystem.openCourse('spirituality')">
+                            <i class="fas fa-mountain"></i> Traditional Energy Concepts
+                        </button>
+                    </div>
                 </div>
             </div>
         `;
@@ -954,7 +1135,6 @@ class LiurenSystem {
         else hourIndex = 12;                              // Hai
         
         // For simplicity, use solar month/day
-        // In a real app, you'd use proper lunar conversion
         const month = date.getMonth() + 1;
         const day = date.getDate();
         
@@ -1087,7 +1267,7 @@ function showHowToUse() {
         <ul>
             <li><strong>Basic meaning</strong>: General interpretation</li>
             <li><strong>Specific aspects</strong>: Career, wealth, love, health, travel</li>
-            <li><strong>Additional details</strong>: Timing, direction, colors, deities</li>
+            <li><strong>Traditional concepts</strong>: Weather associations, energy concepts</li>
             <li><strong>Adaptation advice</strong>: How to apply the interpretation flexibly</li>
         </ul>
         
@@ -1096,7 +1276,7 @@ function showHowToUse() {
         <ul>
             <li>Read about each palm position in detail</li>
             <li>Learn adaptation methods</li>
-            <li>Study the cultural context</li>
+            <li>Study traditional energy concepts</li>
             <li>Check the glossary of terms</li>
         </ul>
         
@@ -1153,9 +1333,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Add CSS for modal
-    const modalStyles = document.createElement('style');
-    modalStyles.textContent = `
+    // Add CSS for modal and additional styles
+    const additionalStyles = document.createElement('style');
+    additionalStyles.textContent = `
         .modal {
             display: none;
             position: fixed;
@@ -1250,8 +1430,60 @@ document.addEventListener('DOMContentLoaded', () => {
             color: #8D6E63;
             margin-top: 10px;
         }
+        
+        /* Additional styles for spirituality content */
+        .spirituality-section, .traditional-concepts {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: var(--border-radius-md);
+            margin: 20px 0;
+            border-left: 4px solid #9C27B0;
+        }
+        
+        .spirituality-section h4, .traditional-concepts h3 {
+            color: #9C27B0;
+            margin-bottom: 15px;
+        }
+        
+        .spirituality-content, .traditional-concepts .spirituality-content {
+            background: white;
+            padding: 15px;
+            border-radius: var(--border-radius-sm);
+            margin: 15px 0;
+        }
+        
+        .learn-more-btn, .spirituality-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: var(--border-radius-sm);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px;
+        }
+        
+        .spirituality-btn {
+            background: linear-gradient(135deg, #9C27B0, #BA68C8);
+        }
+        
+        .learn-more-btn:hover, .spirituality-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
     `;
-    document.head.appendChild(modalStyles);
+    document.head.appendChild(additionalStyles);
 });
 
 // Make functions globally available

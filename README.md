@@ -1,11 +1,11 @@
 # Liuren Divination System
 
 <div align="right">
-  <button>🇨🇳 中文</button>
+  [中文](https://laddzhao.github.io/liuren-divination-system/)
 </div>
 
 ## 🌐 Live Demo
-**[Click to Experience](https://laddzhao.github.io/liuren-divination-system/)**
+**[Click to Experience]([https://laddzhao.github.io/liuren-divination-system/](https://github.com/laddzhao/liuren-divination-system/blob/main/READMECN.md))**
 
 ## 📖 Introduction
 Liuren Divination (小六壬) is a traditional Chinese divination method that uses six fixed positions on the palm to analyze situations based on time and intuition. This project provides a modern web implementation of this ancient system.

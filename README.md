@@ -1,8 +1,8 @@
 # Liuren Divination System
 
 <div align="right">
-  <button onclick="showEnglish()">🇺🇸 English</button>
-  <button onclick="showChinese()">🇨🇳 中文</button>
+  <button id="english-btn" onclick="showEnglish()">🇺🇸 English</button>
+  <button id="chinese-btn" onclick="showChinese()">🇨🇳 中文</button>
 </div>
 
 <div id="english-content">
@@ -69,32 +69,23 @@ Liuren Divination (小六壬) is a traditional Chinese divination method that us
 function showEnglish() {
   document.getElementById('english-content').style.display = 'block';
   document.getElementById('chinese-content').style.display = 'none';
-  updateButtonStyle('english');
+  
+  // 更新按钮样式
+  document.getElementById('english-btn').style.backgroundColor = '#0366d6';
+  document.getElementById('english-btn').style.color = 'white';
+  document.getElementById('chinese-btn').style.backgroundColor = '#f1f1f1';
+  document.getElementById('chinese-btn').style.color = '#333';
 }
 
 function showChinese() {
   document.getElementById('english-content').style.display = 'none';
   document.getElementById('chinese-content').style.display = 'block';
-  updateButtonStyle('chinese');
-}
-
-function updateButtonStyle(lang) {
-  const buttons = document.querySelectorAll('div[align="right"] button');
-  buttons.forEach(btn => {
-    btn.style.fontWeight = 'normal';
-    btn.style.backgroundColor = '#f1f1f1';
-    btn.style.color = '#333';
-  });
   
-  if (lang === 'english') {
-    buttons[0].style.fontWeight = 'bold';
-    buttons[0].style.backgroundColor = '#0366d6';
-    buttons[0].style.color = 'white';
-  } else {
-    buttons[1].style.fontWeight = 'bold';
-    buttons[1].style.backgroundColor = '#0366d6';
-    buttons[1].style.color = 'white';
-  }
+  // 更新按钮样式
+  document.getElementById('english-btn').style.backgroundColor = '#f1f1f1';
+  document.getElementById('english-btn').style.color = '#333';
+  document.getElementById('chinese-btn').style.backgroundColor = '#0366d6';
+  document.getElementById('chinese-btn').style.color = 'white';
 }
 
 // 默认显示英文
@@ -121,11 +112,11 @@ div[align="right"] button {
 }
 
 div[align="right"] button:hover {
-  background-color: #e1e1e1;
+  opacity: 0.8;
 }
 
 #english-content, #chinese-content {
-  animation: fadeIn 0.5s;
+  animation: fadeIn 0.3s;
 }
 
 @keyframes fadeIn {

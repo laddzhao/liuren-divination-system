@@ -1,11 +1,5 @@
 # Liuren Divination System
 
-<div align="right">
-  <button id="english-btn" onclick="showEnglish()">🇺🇸 English</button>
-  <button id="chinese-btn" onclick="showChinese()">🇨🇳 中文</button>
-</div>
-
-<div id="english-content">
 
 ## 🌐 Live Demo
 **[Click to Experience](https://laddzhao.github.io/liuren-divination-system/)**
@@ -33,9 +27,8 @@ Liuren Divination (小六壬) is a traditional Chinese divination method that us
 - **Traditional Aesthetics** - Chinese-inspired color scheme
 - **Interactive Elements** - Clickable palm chart and accordion sections
 
-</div>
 
-<div id="chinese-content" style="display: none;">
+
 
 ## 🌐 在线演示
 **[点击体验](https://laddzhao.github.io/liuren-divination-system/)**
@@ -63,64 +56,3 @@ Liuren Divination (小六壬) is a traditional Chinese divination method that us
 - **传统美学** - 中国风配色方案
 - **交互元素** - 可点击的掌诀图和折叠部分
 
-</div>
-
-<script>
-function showEnglish() {
-  document.getElementById('english-content').style.display = 'block';
-  document.getElementById('chinese-content').style.display = 'none';
-  
-  // 更新按钮样式
-  document.getElementById('english-btn').style.backgroundColor = '#0366d6';
-  document.getElementById('english-btn').style.color = 'white';
-  document.getElementById('chinese-btn').style.backgroundColor = '#f1f1f1';
-  document.getElementById('chinese-btn').style.color = '#333';
-}
-
-function showChinese() {
-  document.getElementById('english-content').style.display = 'none';
-  document.getElementById('chinese-content').style.display = 'block';
-  
-  // 更新按钮样式
-  document.getElementById('english-btn').style.backgroundColor = '#f1f1f1';
-  document.getElementById('english-btn').style.color = '#333';
-  document.getElementById('chinese-btn').style.backgroundColor = '#0366d6';
-  document.getElementById('chinese-btn').style.color = 'white';
-}
-
-// 默认显示英文
-window.onload = function() {
-  showEnglish();
-}
-</script>
-
-<style>
-div[align="right"] {
-  margin-bottom: 20px;
-}
-
-div[align="right"] button {
-  padding: 8px 16px;
-  margin: 0 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-  color: #333;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s;
-}
-
-div[align="right"] button:hover {
-  opacity: 0.8;
-}
-
-#english-content, #chinese-content {
-  animation: fadeIn 0.3s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>

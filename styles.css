@@ -264,7 +264,7 @@ button:hover {
 }
 
 .btn-secondary {
-    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light);
     color: white;
 }
 
@@ -380,6 +380,82 @@ button:hover {
     background: rgba(0, 0, 0, 0.05);
 }
 
+/* Weather Card */
+.weather-card {
+    background: linear-gradient(135deg, #E8F5FD, #D4EAF7);
+    border-radius: var(--border-radius-md);
+    padding: 25px;
+    margin: 25px 0;
+    border-left: 5px solid var(--water-color);
+    border: 2px solid #BBDEFB;
+}
+
+.weather-card h3 {
+    color: #1565C0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-card h3 i {
+    margin-right: 10px;
+}
+
+.cultural-context {
+    color: #0D47A1;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.weather-poems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.weather-poem {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #BBDEFB;
+}
+
+.weather-poem strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.weather-poem .chinese {
+    font-family: 'Noto Serif TC', serif;
+    color: #0D47A1;
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+
+.weather-poem .english {
+    color: #424242;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.cultural-note-small {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #5D4037;
+    border-left: 3px solid var(--warning-color);
+}
+
+.cultural-note-small i {
+    color: var(--warning-color);
+    margin-right: 5px;
+}
+
 /* Results */
 .default-result {
     text-align: center;
@@ -423,6 +499,19 @@ button:hover {
     color: var(--text-medium);
     font-size: 0.9rem;
     margin-top: 5px;
+}
+
+.cultural-note {
+    background: #FFF8E1;
+    padding: 15px;
+    border-radius: var(--border-radius-md);
+    margin-top: 25px;
+    border-left: 4px solid var(--warning-color);
+}
+
+.cultural-note i {
+    color: var(--warning-color);
+    margin-right: 8px;
 }
 
 /* Knowledge Area */
@@ -534,6 +623,42 @@ button:hover {
     overflow-y: auto;
 }
 
+/* Spirituality Content */
+.spirituality-content {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    margin: 15px 0;
+    border-left: 4px solid #9C27B0;
+}
+
+.spirituality-warning {
+    background: #FFF3E0;
+    padding: 15px;
+    border-radius: var(--border-radius-sm);
+    margin: 15px 0;
+    border-left: 4px solid #FF9800;
+}
+
+.spirituality-warning h4 {
+    color: #FF9800;
+    margin-bottom: 8px;
+}
+
+.spirituality-concepts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.spirituality-concept {
+    background: white;
+    padding: 15px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid #E0E0E0;
+}
+
 /* Footer */
 footer {
     background: var(--light-bg);
@@ -643,6 +768,10 @@ footer p {
     
     .palm-chart {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .weather-poems {
+        grid-template-columns: 1fr;
     }
     
     .site-title {

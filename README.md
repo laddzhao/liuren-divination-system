@@ -1,13 +1,11 @@
-# Liuren Divination System | 小六壬占卜系统
+# Liuren Divination System
 
-<!-- 语言切换按钮 -->
 <div align="right">
-  <a href="en-content" onclick="toggleLanguage('en')">🇺🇸 English</a> | 
-  <a href="zh-content" onclick="toggleLanguage('zh')">🇨🇳 中文</a>
+  <button onclick="showEnglish()">🇺🇸 English</button>
+  <button onclick="showChinese()">🇨🇳 中文</button>
 </div>
 
-<!-- 英文内容 -->
-<div id="en-content" style="display: block;">
+<div id="english-content">
 
 ## 🌐 Live Demo
 **[Click to Experience](https://laddzhao.github.io/liuren-divination-system/)**
@@ -35,25 +33,103 @@ Liuren Divination (小六壬) is a traditional Chinese divination method that us
 - **Traditional Aesthetics** - Chinese-inspired color scheme
 - **Interactive Elements** - Clickable palm chart and accordion sections
 
-<!-- 中文内容 -->
-<div id="zh-content" style="display: none;">
+</div>
 
-## 🎯 **核心功能：**
-1. **点击切换** - 点击顶部语言链接即时切换中英文
-2. **URL锚点记忆** - 支持#en和#zh锚点，刷新页面保持语言状态
-3. **独立内容区域** - 中英文内容完全分开，互不干扰
-4. **动画效果** - 切换时有淡入淡出动画
+<div id="chinese-content" style="display: none;">
 
-## 📱 **用户体验：**
-1. **明确标识** - 🇺🇸 和 🇨🇳 国旗图标清晰
-2. **按钮反馈** - 当前语言加粗显示
-3. **响应式设计** - 移动端优化布局
-4. **SEO友好** - 两种语言内容都在HTML中
+## 🌐 在线演示
+**[点击体验](https://laddzhao.github.io/liuren-divination-system/)**
 
-## 🛠 **技术特点：**
-1. **纯HTML/JS/CSS** - 无需额外依赖
-2. **客户端切换** - 无需服务器支持
-3. **状态保持** - 通过URL锚点记住选择
-4. **平滑动画** - CSS过渡效果
+## 📖 简介
+小六壬是中国传统占卜方法，通过掌上六个固定位置，基于时间和直觉分析事态。本项目提供了一个现代化的网络实现。
 
-这样用户在 GitHub 上查看时，可以自由选择阅读英文或中文版本，体验更好！
+## ✨ 功能特点
+
+### 🔮 占卜计算器
+- **三种推算方式:**
+  - **时间推算** - 手动选择农历日期
+  - **当前时间** - 自动实时转换
+  - **随机取数** - 随机生成数字进行占卜
+
+### 📚 学习中心
+- **完整教程** - 小六壬基础知识逐步指导
+- **六掌诀详解** - 每个位置详细解释
+- **传统概念** - 文化和精神背景
+- **天气谚语** - 传统天气观察诗句
+
+### 🎨 用户界面
+- **双语支持** - 英文/中文界面
+- **响应式设计** - 桌面和移动端都适用
+- **传统美学** - 中国风配色方案
+- **交互元素** - 可点击的掌诀图和折叠部分
+
+</div>
+
+<script>
+function showEnglish() {
+  document.getElementById('english-content').style.display = 'block';
+  document.getElementById('chinese-content').style.display = 'none';
+  updateButtonStyle('english');
+}
+
+function showChinese() {
+  document.getElementById('english-content').style.display = 'none';
+  document.getElementById('chinese-content').style.display = 'block';
+  updateButtonStyle('chinese');
+}
+
+function updateButtonStyle(lang) {
+  const buttons = document.querySelectorAll('div[align="right"] button');
+  buttons.forEach(btn => {
+    btn.style.fontWeight = 'normal';
+    btn.style.backgroundColor = '#f1f1f1';
+    btn.style.color = '#333';
+  });
+  
+  if (lang === 'english') {
+    buttons[0].style.fontWeight = 'bold';
+    buttons[0].style.backgroundColor = '#0366d6';
+    buttons[0].style.color = 'white';
+  } else {
+    buttons[1].style.fontWeight = 'bold';
+    buttons[1].style.backgroundColor = '#0366d6';
+    buttons[1].style.color = 'white';
+  }
+}
+
+// 默认显示英文
+window.onload = function() {
+  showEnglish();
+}
+</script>
+
+<style>
+div[align="right"] {
+  margin-bottom: 20px;
+}
+
+div[align="right"] button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+div[align="right"] button:hover {
+  background-color: #e1e1e1;
+}
+
+#english-content, #chinese-content {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>

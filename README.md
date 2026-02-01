@@ -2,8 +2,8 @@
 
 <!-- 语言切换按钮 -->
 <div align="right">
-  <a href="#" onclick="toggleLanguage('en')">🇺🇸 English</a> | 
-  <a href="#" onclick="toggleLanguage('zh')">🇨🇳 中文</a>
+  <a href="en-content" onclick="toggleLanguage('en')">🇺🇸 English</a> | 
+  <a href="zh-content" onclick="toggleLanguage('zh')">🇨🇳 中文</a>
 </div>
 
 <!-- 英文内容 -->
